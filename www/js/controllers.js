@@ -129,10 +129,15 @@ angular.module('slowfood.controllers', [])
         });
 
     });
+})
 
-//});
 
-//.controller('cartsCtrl', function($scope) {
+.controller('cartsCtrl', function($scope) {
+
+    $scope.fakeCart = {cart_id: 1,
+                        dishes:[{name: 'Spaghetti', price: 1},
+                                {name: 'Chocolate', price: 1}],
+                        total: 2}
 
 });
 
