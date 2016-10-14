@@ -94,4 +94,9 @@ angular.module('slowfood.controllers', [])
 
     });
 
+//});
+
+//.controller('cartsCtrl', function($scope) {
+
 });
+

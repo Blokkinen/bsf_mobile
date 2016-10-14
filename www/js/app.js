@@ -56,7 +56,19 @@ angular.module('slowfood', ['ionic', 'slowfood.controllers', 'slowfood.services'
         controller: 'getRestaurantsCtrl'
       }
     }
+  })
+
+  .state('tab.carts', {
+    url: '/carts',
+    views: {
+      'tab-carts': {
+        templateUrl: 'templates/tab-carts.html',
+        controller: 'cartsCtrl'
+      }
+    }
   });
+
+
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/restaurants');
